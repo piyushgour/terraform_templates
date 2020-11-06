@@ -1,5 +1,5 @@
 resource "gitlab_project" "project" {
-    source = "../module_gitlab"
+    source = "../modules/gitlab_project"
     name                                             = "${var.name}"
     description                                      = "${var.DESCRIPTION}"
     namespace_id                                     = "${var.NAMESPACE_ID}"
