@@ -19,16 +19,13 @@
         - DEFAULT_BRANCH - The default branch for the project.
         
    See [KUBERNETES.md](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md)
-        
-        
-[I'm an inline-style link](https://www.google.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
+#How to Create Project
+go to example -> Templates\2EnvironmentProject\examples\gitlab.tf.
+In the gitlab.tf the "source" is containing source module code.
+We are passing values according to business need.
+- NAME - The name of the project.
+  - DESCRIPTION - A description of the project.
+    - NAMESPACE_ID - A Name space is unique name, we access via url. [Namespace](https://docs.gitlab.com/ee/user/group/index.html#namespaces "Heading link")
+  Visibility_Level - Valid values are private, internal, public. Repositories are created as private by default. For more info please refer this :-  [visibility_level](https://confluence.frb.org/display/7GDevOps/Project+Creation+Guidelines "Heading link")
